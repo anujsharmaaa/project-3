@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-container::before{
+content: '';
+background-image: url(background-img.jpg);
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+position: absolute;
+height: 100vh;
+width: 100vw;
+z-index: -1;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(205 69 28);
+    padding: 20px 100px;
+}
+
+.logo{
+    flex-grow: 2;
+    color: #fff;
+}
+
+.menu{
+    display: flex;
+    flex-grow: 1;
+}
+
+.menu-list{
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-item{
+    list-style: none;
+    margin: 0 30px;
+    font-size: 20px;
+    color: rgb(255 255 255 / 73%);
+}
+
+.list-item:hover{
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.btn{
+    flex-grow: 1;
+    background-color: rgb(255, 102, 102);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: rgb(166, 255, 49);
+    border-color: rgb(170, 255, 0);
+    border-style: solid;
+    cursor: pointer;
+    background: transparent;
+}
+
+
+.btn:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    border-color: rgb(251, 255, 0);
+    background: transparent;
+}
+
+.main-heading{
+    display: flex;
+    padding-left: 100px;
+    background-color: rgb(205 69 28);
+    padding-top: 30px;
+    padding-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    color: #fff;
+    flex-grow: 3;
+    font-size: 70px;
+}
+
+.para{
+    flex-grow: 4;
+    color: #fff;
+    font-size: 25px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(205 69 28);
+    width: 100vw;
+}
+
+.left{
+    font-size: 40px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 1px 14px;
+    color: darkcyan ;
+}
+
+.right{
+    font-size: 40px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    padding: 1px 14px;
+    color: darkcyan ;
+}
+
+.left-box{
+    background-color: chartreuse;
+    padding: 10px 30px;
+    margin-left: 107rem;
+}
+
+.right-box{
+    background-color: burlywood;
+    padding: 10px 30px;
+}
+
+.left-box:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.right-box:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
